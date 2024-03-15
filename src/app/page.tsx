@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Header } from "@/components/Header";
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
+import { PlayIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 export default function Home() {
@@ -23,9 +25,11 @@ export default function Home() {
           <p className="text-shadow-md text-sm text-gray-300 md:max-w-lg md:text-lg lg:max-w-2xl">
           This sci-fi anthology series explores a twisted, high-tech near-future where humanity's greatest innovations and darkest instincts collide.
           </p>
-          <div className="flex space-x-3">
-            <a className="flex cursor-pointer items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5"> Watch Now</a>
-            <button className="flex cursor-pointer items-center gap-x-2 rounded bg-gray-500 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5"> More Info</button>
+          <div className="flex space-x-4">
+            <a className="flex cursor-pointer items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5">
+              <PlayIcon className="h-6"/>
+              Watch Now</a>
+            <button className="flex cursor-pointer items-center gap-x-2 rounded bg-gray-500 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5"> <InformationCircleIcon className="h-6"/> More Info</button>
           </div>
         </div>
       </main>
