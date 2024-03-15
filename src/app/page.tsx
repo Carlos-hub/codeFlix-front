@@ -31,6 +31,29 @@ export default function Home() {
               Watch Now</a>
             <button className="flex cursor-pointer items-center gap-x-2 rounded bg-gray-500 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5"> <InformationCircleIcon className="h-6"/> More Info</button>
           </div>
+
+        </div>
+        <div className="flex-col space-y-4 ">
+          <div className="flex">
+            <h2 className=" -ml-2 inline-flex items-center text-2xl font-bold"> See Again</h2>
+          </div>
+          <div className="-ml-8 flex space-x-4 overflow-x-scroll p-6 scrollbar-hide
+          ">
+           
+            {[1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5].map((index):any=>(
+               <div className="group h-28 min-w-[200px] relative transition duration-200 ease-in transform bg-gradient-to-t from-transparent to-black sm:h-36 hover:scale-110 hover:z-50 md:h-40 md:min-w-[300px] lg:h-52 lg:min-w-[400px] z-50" 
+               key={index}>
+                  <Image
+                  src={`/item_${index}.jpg`} 
+                  alt={""}
+                  fill={true}
+                  />
+            </div>
+            ))}
+            
+          
+          </div>
+
         </div>
       </main>
     </div>
